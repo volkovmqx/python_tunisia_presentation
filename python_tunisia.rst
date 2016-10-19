@@ -1,5 +1,5 @@
 :title: Python Programming Launguage
-:author: Ghassen Telmoudi
+:author: Messaoudi Lotfi
 :description: Python Tunisia presents python programming language on the SFD 2014.
 :keywords: presentation, restructuredtext, impress.js, tutorial
 :css: tutorial.css
@@ -13,22 +13,31 @@
 
 # whoami
 ========
-.. image:: images/Ghassen-Telmoudi.jpeg
+.. image:: images/volkovmqx.jpg
 .. code:: python
     
     # I am a
     print(
-        "Pythonista since 2009",
-        "Founded Python Tunisia Community"
-        "Open Source fanatic",
-        "Developing a cloud infrasturcture managment solution",
-        "Blessed to code python on my day job"
+        "Computer Sciences Engineering Student",
+        "Part-time FullStack Web Developer",
+        "FOSS Jedi"
     )
+    # Contact 
+    email = "w@greyfox.io" 
+    github = "https://github.com/volkovmqx"
+
+----
+
+Disclaimer
+============
+.. image:: images/Ghassen-Telmoudi.jpeg
+.. code:: python
+
+    ghassen.presentation.addRemote(
+        "https://github.com/pyghassen/python_tunisia_presentation")
+
+    self.presentation = ghassen.presentation.fork()
     
-    # yeah I have 6000+ unread emails, one day I will trash them all.
-    email = "ghassen.telmoudi@gmail.com"
-    # I love that place.
-    github = "https://github.com/pyghassen"
 
 ----
 
@@ -36,12 +45,7 @@ Python, do you know it?
 =======================
 
 
-
 .. image:: images/what-is-python.jpg
-
-.. code:: python
-
-    print("Classic Jacky what!")
 
 
 ----
@@ -54,9 +58,10 @@ Python, do you know it?
         "High level",
         "General purpose",
         "Open Source",
-        "Multi-paradigm (Oject Oriented and Functional)",
-        "Interpreted and Interactive",
+        "Multi-paradigm (Object Oriented and Functional)",
+        "Interpreted and Interactive (REPL)",
         "Cross-platform",
+        "Huge Community (Not just developers)"
     ]
 
 .. _Python: http://www.python.org
@@ -72,6 +77,25 @@ Python, do you know it?
         "when": "1991",
         "where": "The Netherlands",
     }
+
+----
+
+.. image:: images/python-logo-master-v3-TM.png
+
+.. code:: bash
+
+    $ python -V
+    Python 2.7.12
+    $ python3 -V
+    Python 3.5.2
+
+.. code:: python
+
+    #Python Enhancement Proposals
+	python_peps = "https://www.python.org/dev/peps/"
+	
+
+.. _Python: http://www.python.org
 
 ----
 
@@ -101,7 +125,7 @@ Hello Python Tunisia in Java
     import java.io.*;
     public class Helloworld
     {
-      public static void main(String[] args)
+    public static void main(String[] args)
         { 
           System.out.println("Hello Python Tunisia!");
         }
@@ -119,14 +143,6 @@ Hello Python Tunisia in Python
     print("Hello World")
 
     # Comes in as little as 20 characters and only 1 line
-
-----
-
-.. image:: images/ancient_aliens_guy.jpg
-
-.. code:: python
-
-    print("The ancient aliens guy said it!")
 
 ----
 
@@ -154,14 +170,26 @@ Python Data types
 
 .. code:: python
     
-    _list = ["Python", "Tunisia", "on", "SFD"]
-    tuple = (1, 2, 3)
+    >>> _list = ["Python", "Tunisia", "on", "Google"]
+    >>> _list[0]
+    'Python'
 
-    _set = {"this", "a", "set"}
-    dictionary = {
-        "date", "2014-10-19",
-        "location": "Monastir, Tunisia"
+    >>> tuple = (1, 2, "three")
+    >>> tuple[2]
+    'three'
+
+
+    >>> _set = {"this","is","spartaaa"}                                                                                                           
+    >>> 'spartaaa' in _set                                                                                                                          
+    True
+     
+    >>> dictionary = {
+        "date": "2016-10-19",
+        "location": "ISSATSO, Tunisia, Mother Earth, Solar system"
     }
+    >>> dictionary["date"]
+    '2016-10-19'
+
     string = "yeah you guessed it, this a string"
     _int = 23
     _float = 9.99
@@ -199,7 +227,7 @@ Python functions
         @times: int
 
         """
-        messages = ["hello {}\n".formt(name) for name in range(len(times)]
+        messages = ["hello {}\n".format(name) for name in range(time)]
         # Joins the list of messages and returns them as one String.
         return "".join(messages)
 
@@ -229,8 +257,26 @@ Python Class
             return "Hello my name is {}".format(self.name)
 
     if __name__ == '__main__':
-        developer = Developper("Ghassen Telmoudi")
+        developer = Developper("Lotfi Messaoudi")
         developer.say_hello()
+
+----
+
+Disadvantages
+============================
+.. image:: images/not-sure.jpg
+.. code:: python
+
+
+    python_disadvantages = [
+        "isn't the best for memory intensive task",
+        "is interpreted language & is slow compared to C/C++ or java",
+        "not a great choice for a high-graphic 3d game that takes up a lot of CPU",
+    ]
+    python_questions = [
+        "Does adding some RAM Slots is expensive then your time ?",
+        "You have the control, Jython, Cython, PyPy etc."
+    ]
 
 ----
 
@@ -256,10 +302,19 @@ That's all folks!
 
 .. code:: python
 
-    print("I know you're hungry, but it' time to some Qs")
+    print("Questions time !")
 
 
 ----
 
 
-y.
+Thanks everyone !
+=================
+
+.. code:: python
+
+    # Contact 
+    email = "w@greyfox.io" 
+    github = "https://github.com/volkovmqx"
+    print("Thanks !")
+
